@@ -1,0 +1,28 @@
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 71px;
+    align-items: center;
+
+
+}
+
+.hero {
+    background-image: url(../assets/images/hero1.jpeg);
+    height: 100vh;
+    background-size: cover;
+}
+.nav-text{
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 10%;
+}
+.nav-text h2{
+    font-size: 5rem;
+    font-weight: lighter;
+}
+.nav-text h1{
+    font-size: 7rem;
+    text-decoration-color: black;
+}
