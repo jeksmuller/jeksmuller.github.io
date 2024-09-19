@@ -7,38 +7,159 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/<link rel=" stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Portfolio</title>
 </head>
 
 <body>
-    <nav>
+    <nav class="fixed right-0 left-0">
         <ul id="nav-items">
             <li class="list-items"><a href="">Home</a></li>
             <li class="list-items"><a href="">About</a></li>
             <li class="list-items"><a href="">Resume</a></li>
             <li class="list-items"><a href="">Contact</a></li>
-    
+
         </ul>
     </nav>
-    
+
     <section class="hero">
 
-        <div class="hero-text">
+        <div class="hero-text pt-50px font-bold mt-50px text-[10vh]">
             <h2> Hello, I'm</h1>
                 <h1> Jacob Delanyo Dotsey</h1>
-                <p>a Web developer</p>
-                <button> Hire me</button>
+                <p class="animate-bounce">
+                    < a Web developer />
+                </p>
+                <button
+                    class="bg-violet-500 hover:bg-violet-600 active:bg-white-700 focus:outline-none focus:ring focus:ring-violet-300 ... border-double rounded text-white font-normal hover:font-bold">
+                    Hire me</button>
 
         </div>
     </section>
 
-    <section class="main">
-        <h1>ABOUT ME</h1>
-        <div class="main-container">
+
+    <section class="edu-section">
+
+        <h1 class="font-bold underline text-[5vh] pb-[2rem] pt-[2rem]">skills</h1>
+        <div class="my-skills">
+
+            <div>
+                <img src="./assets/images/skills.jpeg" alt="">
+                <p>Mastery of HTML for structure.</p>
+            </div>
+
+            <div>
+                <img src="./assets/images/skills css.png" alt="">
+                <p>Mastery of CSS for styling</p>
+            </div>
+
+            <div>
+                <img src="./assets/images/skills js2.png" alt="">
+                <p class="text-center">Proficiency in JavaScript for dynamic content and interactivity.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-4 gap-4">
+            <div>
+                <img src="./assets/images/skills com.jpeg" alt="">
+                <p>Ability to effectively communicate ideas and collaborate with team members.</p>
+            </div>
+
+            <div>
+                <img src="./assets/images/skills time.png" alt="">
+                <p>Skills in managing projects and deadlines efficiently.</p>
+
+            </div>
+
+            <div>
+                <img src="./assets/images/skills pro.png" alt="">
+                <p>Strong analytical skills to troubleshoot and resolve issues.</p>
+
+            </div>
+
+            <div>
+                <img src="./assets/images/skills att.jpeg" alt="">
+                <p>A keen eye for detail to ensure quality and performance.</p>
+            </div>
+        </div>
+
+
+        </div>
+
+        <h1 class="font-bold underline text-[5vh] pt-[2rem] pb-[2rem]"> Education</h1>
+        <div class="edu-section2">
+            <div>
+                <img src="./assets/images/mest.png" alt="">
+                <p> September 2024 - Present</p>
+                <p> Web development</p>
+            </div>
+
+            <div>
+                <img src="./assets/images/victory.png" alt="">
+                <p> Diploma in Ministerial Studies</p>
+                <p> July 2014 - August 2016</p>
+                <p> Major: Theology</p>
+                <p> Assistant School Prefect</p>
+
+            </div>
+
+            <div>
+                <img src="./assets/images/ketasco.png" alt="">
+                <p> WASSCE Certifacte</p>
+                <p>october 2009 - June 2013</p>
+                <p>Major: Agricultural Science</p>
+                <p> Cultural Prefect</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section>
+        <h1 class="font-bold underline text-center text-[5vh] pb-[2rem] pt-[2rem]">Experience</h1>
+        <div class="grid grid-cols-2 gap-10">
+
+            <div class="marica">
+                <h1 class="font-bold">MARICA CARPET & DECOR</h1>
+                <p>Project Manager | May 2022 - Present</p>
+                <p>Led and managed multiple large-scale interior decor projects from conception to completion.</p>
+                <p>Improved project workflow efficiency by implementing new scheduling and tracking systems, reducing
+                    project delays by 15%.</p>
+                <h3 class="font-bold">Key Achievements</h3>
+                <p>Enhanced customer satisfaction by 20% through improved communication and project transparency.</p>
+                <p>Spearheaded the redesign of a major commercial space, increasing the client's foot traffic by 25%.
+                </p>
+            </div>
+
+            <div>
+                <h1 class="font-bold">NAPOLEON ELECTRICALS</h1>
+                <p>Assistant CEO | February 2015 - April 2022</p>
+                <p>Assisted the CEO in day-to-day management and strategic planning, focusing on company growth and
+                    operational efficiency.</p>
+                <p>Managed cross-departmental coordination to align company goals, streamline processes, and increase
+                    overall productivity.</p>
+                <p>Played a key role in budgeting and financial planning, ensuring the company stayed within projected
+                    margins.</p>
+                <h3 class="font-bold">Key Achievements</h3>
+                <p>Introduced a new operational strategy that reduced production costs by 12% without compromising
+                    quality.</p>
+                <p>Leadership, Strategic planning, Financial analysis, Market research, Stakeholder management, Process
+                    optimization.</p>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section>
+        <h1 class=" text-center font-bold underline text-[5vh] pb-[2rem] pt-[2rem]">ABOUT ME</h1>
+        <div class="grid grid-cols-2 gap-10">
             <div>
                 <img src="./assets/images/jakenew2.jpeg" alt="">
+
             </div>
-            <div class="para">
+            <div>
                 <p>
 
 
@@ -62,53 +183,46 @@
 
                     Let’s connect and explore how I can help bring your web projects to fruition!
                 </p>
+                <div>
+                    <button
+                        class=" mt-[2rem] bg-violet-500 hover:bg-violet-600 active:bg-white-700 focus:outline-none focus:ring focus:ring-violet-300 ...  rounded text-white font-normal hover:font-bold ml-[2rem] p-[15px]">
+                        Hire me</button>
+
+
+                    <button
+                        class=" mt-[2rem] bg-violet-500 hover:bg-violet-600 active:bg-white-700 focus:outline-none focus:ring focus:ring-violet-300 ...  rounded text-white font-normal hover:font-bold ml-[2rem] p-[15px]">
+                        Download CV</button>
+                </div>
+
+
             </div>
 
         </div>
     </section>
+    <section>
+        <h1 class="font-bold text-center font-bold underline text-[5vh] pb-[2rem] pt-[2rem]">Client Testimonial</h1>
+        <div class="grid grid-cols-3 gap-10">
 
-    <section class="edu-section">
-        <h1> Education</h1>
-        <div class="edu-section2">
             <div>
-                <img src="./assets/images/mest.png" alt="">
-                <p> September 2024 - Present</p>
-                <p> Web development</p>
+<p>Outstanding back-end development! Jacob Delanyo Dotsey built a custom API for our e-commerce site, and the performance boost was incredible. The entire process was smooth, and they were always available to answer our questions. Highly recommend!</p>
+<p>Patrick  Emperor</p>
             </div>
 
             <div>
-                <img src="./assets/images/victory.png" alt="">
-                <p> Diploma in Ministerial Studies</p>
-                <p> July 2014 - August 2016</p>
-                <p> Major: Theology</p>
-                <p> Assistant School Prefect</p>
-               
+                <p>"We needed a scalable solution for our growing business, and Jacob Delanyo Dotsey delivered beyond our expectations. The server-side optimization has significantly improved our site's performance, even under heavy traffic. Great experience working with him!</p>
+                <p>Modonux Ventures</p>
             </div>
 
             <div>
-                <img src="./assets/images/ketasco.png" alt="">
-                <p> WASSCE Certifacte</p>
-                <p>october 2009  - June 2013</p>
-                <p>Major: Agricultural Science</p>
-                <p> Cultural Prefect</p>
-            </div>
-
-        </div>
-        <h1>skills</h1>
-        <div class="my-skills">
-           
-            <div>
-                <img src="./assets/images/skills.jpeg" alt="">
-            </div>
-
-            <div>
-                <img src="./assets/images/skills css.png" alt="">
-            </div>
-
-            <div>
-                <img src="./assets/images/skills js2.png" alt="">
+                <p>The security features implemented were top-notch. We had concerns about data breaches, but Jacob Delanyo Dotsey made sure everything was locked down. Communication was excellent throughout the project!</p>
+                <p>Barry Brown</p>
             </div>
         </div>
+
+    </section>
+
+    <section>
+        
     </section>
 </body>
 
