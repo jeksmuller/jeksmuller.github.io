@@ -11,8 +11,9 @@
     <title>Portfolio</title>
 </head>
 
-<body>
-    <nav class="fixed right-0 left-0">
+<body class="bg-gray-900 text-white">
+    <nav class="fixed left-o top-0 w-full">
+
         <ul id="nav-items">
             <li class="list-items"><a href="">Home</a></li>
             <li class="list-items"><a href="">About</a></li>
@@ -20,8 +21,9 @@
             <li class="list-items"><a href="">Contact</a></li>
 
         </ul>
-    </nav>
 
+    </nav>
+    
     <section class="hero">
 
         <div class="hero-text pt-50px font-bold mt-50px text-[10vh]">
@@ -43,7 +45,7 @@
         <h1 class="font-bold underline text-[5vh] pb-[2rem] pt-[2rem]">skills</h1>
         <div class="my-skills">
 
-            <div>
+            <div class="ml-[1rem]">
                 <img src="./assets/images/skills.jpeg" alt="">
                 <p>Mastery of HTML for structure.</p>
             </div>
@@ -59,7 +61,7 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-4 gap-4">
+        <div class="grid grid-cols-4 gap-4 ml-[1rem]">
             <div>
                 <img src="./assets/images/skills com.jpeg" alt="">
                 <p>Ability to effectively communicate ideas and collaborate with team members.</p>
@@ -87,7 +89,7 @@
         </div>
 
         <h1 class="font-bold underline text-[5vh] pt-[2rem] pb-[2rem]"> Education</h1>
-        <div class="edu-section2">
+        <div class="edu-section2 ml-[1rem]">
             <div>
                 <img src="./assets/images/mest.png" alt="">
                 <p> September 2024 - Present</p>
@@ -156,11 +158,11 @@
         <h1 class=" text-center font-bold underline text-[5vh] pb-[2rem] pt-[2rem]">ABOUT ME</h1>
         <div class="grid grid-cols-2 gap-10">
             <div>
-                <img src="./assets/images/jakenew2.jpeg" alt="">
+                <img src="./assets/images/jakenew2.jpeg" class="rounded-[10px] ml-[1rem]" alt="Circle Image ">
 
             </div>
             <div>
-                <p>
+                <p class="mr-[1rem] ml-[1rem]">
 
 
                     I am a passionate web developer with a foundation in HTML, CSS, and JavaScript. With a keen eye for
@@ -227,50 +229,105 @@
 
     </section>
 
-    <section>
-        <h2 class="text-center font-bold text-[5vh] mt-[2rem]">Get in Touch</h2>
+    <div class="bg-gray-900 text-white">
+        <div class="container mx-auto py-10">
+            <h2 class="text-center text-4xl font-bold mb-8 underline">My Services</h2>
 
-        <div class="grid grid-cols-2 gap-10 mt-[3rem] bg-[black] text-white pl-[2rem] pt-[2rem]">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Web Design Card -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-green-500 text-5xl mb-4">
+                        <!-- Icon can be added here (FontAwesome or SVG) -->
+                        🖥️
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Web Services</h3>
+                    <p class="text-gray-400 mb-4">
+                      Developing microservices for specific functionalities that can be independently deployed.
+                    </p>
+                    <a href="#" class="text-green-500 hover:underline">Learn More</a>
+                </div>
+
+                <!-- Search Engine Optimization Card -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-green-500 text-5xl mb-4">
+                        <!-- Icon can be added here (FontAwesome or SVG) -->
+                        🔍
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">API development</h3>
+                    <p class="text-gray-400 mb-4">
+                        Creating RESTful or GraphQL APIs for frontend applications to interact with
+                    </p>
+                    <a href="#" class="text-green-500 hover:underline">Learn More</a>
+                </div>
+
+                <!-- Video Editing Card -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-green-500 text-5xl mb-4">
+                        <!-- Icon can be added here (FontAwesome or SVG) -->
+                        🎬
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Video Editing</h3>
+                    <p class="text-gray-400 mb-4">
+                        Even the all-powerful Pointing has no control about the blind texts...
+                    </p>
+                    <a href="#" class="text-green-500 hover:underline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="contact">
+        <h2 class="text-center font-bold text-[5vh] mt-[2rem] underline">Get in Touch</h2>
+
+        <div class="grid grid-cols-2 gap-10 mt-[3rem] bg-[bg-gray-800] text-white pl-[2rem] pt-[2rem]">
             <div id="contact">
-                
+
                 <p>I'd love to hear about your project. Let's work together!</p>
-    
+
                 <form action="submit_form.php" method="POST">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
-    
+
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
-    
+
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" class="mb-[1rem] mt-[1rem]" required></textarea>
-    
-                    <button type="submit" class="font-normal hover:font-bold bg-[violet] mb-[2rem]">Send Message</button>
+
+                    <button type="submit" class="font-normal hover:font-bold bg-[violet] mb-[2rem]">Send
+                        Message</button>
                 </form>
             </div>
 
 
+            
             <div id="get-in-touch">
                 <h2>Let's Connect!</h2>
-                <p>Feel free to reach out via email, social media, or schedule a quick call. I'm available to discuss your
+                <p>Feel free to reach out via email, social media, or schedule a quick call. I'm available to discuss
+                    your
                     project anytime!</p>
-    
+
                 <ul>
                     <li>Email: <a href="dotseydelanyo11@gmail.com">dotseydelanyo11@gmail.com</a></li>
                     <li>Phone: <a href="tel:+233245840830">+233 245 840 830</a></li>
-                    <li>LinkedIn: <a href="www.linkedin.com/in/jacob-delanyo-dotsey-09478b222" target="_blank">Delanyo Dotsey</a>
+                    <li>LinkedIn: <a href="www.linkedin.com/in/jacob-delanyo-dotsey-09478b222" target="_blank">Delanyo
+                            Dotsey</a>
                     </li>
-                    <li>Twitter: <a href="https://x.com/Jeksmuller1/status/1761495354279682204" target="_blank">@jeksmuller1</a></li>
-                   
+                    <li>Twitter: <a href="https://x.com/Jeksmuller1/status/1761495354279682204"
+                            target="_blank">@jeksmuller1</a></li>
+
                     <li>Facebook: <a href="facebook.com/Delanyodotsey" target="_blank">Delanyo Dotsey</a></li>
                 </ul>
             </div>
 
         </div>
-      
+
 
 
     </section>
+
+
 </body>
 
 </html>
