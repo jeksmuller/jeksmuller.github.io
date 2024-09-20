@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/<link rel=" stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Portfolio</title>
 </head>
@@ -16,14 +17,14 @@
 
         <ul id="nav-items">
             <li class="list-items"><a href="">Home</a></li>
-            <li class="list-items"><a href="">About</a></li>
-            <li class="list-items"><a href="">Resume</a></li>
-            <li class="list-items"><a href="">Contact</a></li>
+            <li class="list-items"><a href="#about">About</a></li>
+            <li class="list-items"><a href=" #resume">Resume</a></li>
+            <li class="list-items"><a href="#contact">Contact</a></li>
 
         </ul>
 
     </nav>
-    
+
     <section class="hero">
 
         <div class="hero-text pt-50px font-bold mt-50px text-[10vh]">
@@ -40,7 +41,7 @@
     </section>
 
 
-    <section class="edu-section">
+    <section id="resume" class="edu-section">
 
         <h1 class="font-bold underline text-[5vh] pb-[2rem] pt-[2rem]">skills</h1>
         <div class="my-skills">
@@ -154,7 +155,7 @@
     </section>
 
 
-    <section>
+    <section id="about">
         <h1 class=" text-center font-bold underline text-[5vh] pb-[2rem] pt-[2rem]">ABOUT ME</h1>
         <div class="grid grid-cols-2 gap-10">
             <div>
@@ -242,7 +243,7 @@
                     </div>
                     <h3 class="text-2xl font-bold mb-2">Web Services</h3>
                     <p class="text-gray-400 mb-4">
-                      Developing microservices for specific functionalities that can be independently deployed.
+                        Developing microservices for specific functionalities that can be independently deployed.
                     </p>
                     <a href="#" class="text-green-500 hover:underline">Learn More</a>
                 </div>
@@ -301,7 +302,7 @@
             </div>
 
 
-            
+
             <div id="get-in-touch">
                 <h2>Let's Connect!</h2>
                 <p>Feel free to reach out via email, social media, or schedule a quick call. I'm available to discuss
@@ -323,9 +324,30 @@
 
         </div>
 
-
-
     </section>
+
+    <footer class="bg-gray-900 text-center py-6 text-gray-400">
+        <div class="flex justify-center space-x-4 mb-4">
+            <a href="#" class="text-green-400 text-xl">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="text-green-400 text-xl">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-green-400 text-xl">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-green-400 text-xl">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+        </div>
+        <p class="text-sm">
+            Copyright © 2024 All rights reserved | This template is made with
+            <span class="text-red-500">♥</span> by
+            <a href="https://colorlib.com" class="text-green-400 hover:underline">Delanyo</a>
+        </p>
+    </footer>
 
 
 </body>
