@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/<link rel=" stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Portfolio</title>
 </head>
@@ -34,8 +32,13 @@
                     < a Web developer />
                 </p>
                 <button
-                    class="bg-violet-500 hover:bg-violet-600 active:bg-white-700 focus:outline-none focus:ring focus:ring-violet-300 ... border-double rounded text-white font-normal hover:font-bold">
+                    class="bg-violet-500 hover:bg-violet-600 active:bg-white-700 focus:outline-none focus:ring focus:ring-violet-300 ... rounded text-white font-normal hover:font-bold text-[6vh]">
                     Hire me</button>
+                    <button
+                    class=" mt-[2rem] bg-violet-500 hover:bg-violet-600 active:bg-white-700 focus:outline-none focus:ring focus:ring-violet-300 ...  rounded text-white font-normal hover:font-bold ml-[2rem] p-[15px] text-[3vh]">
+                    Download CV  <i class="fa fa-download" style="color: #22C55E;"></i></button>
+                   
+
 
         </div>
     </section>
@@ -121,7 +124,7 @@
         <h1 class="font-bold underline text-center text-[5vh] pb-[2rem] pt-[2rem]">Experience</h1>
         <div class="grid grid-cols-2 gap-10">
 
-            <div class="marica">
+            <div class="marica ml-[1rem]">
                 <h1 class="font-bold">MARICA CARPET & DECOR</h1>
                 <p>Project Manager | May 2022 - Present</p>
                 <p>Led and managed multiple large-scale interior decor projects from conception to completion.</p>
@@ -133,7 +136,7 @@
                 </p>
             </div>
 
-            <div>
+            <div class="mr-[1rem]">
                 <h1 class="font-bold">NAPOLEON ELECTRICALS</h1>
                 <p>Assistant CEO | February 2015 - April 2022</p>
                 <p>Assisted the CEO in day-to-day management and strategic planning, focusing on company growth and
@@ -194,7 +197,9 @@
 
                     <button
                         class=" mt-[2rem] bg-violet-500 hover:bg-violet-600 active:bg-white-700 focus:outline-none focus:ring focus:ring-violet-300 ...  rounded text-white font-normal hover:font-bold ml-[2rem] p-[15px]">
-                        Download CV</button>
+                        Download CV  <i class="fa fa-download" style="color: #22C55E;"></i></button>
+                       
+
                 </div>
 
 
@@ -239,7 +244,7 @@
                 <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
                     <div class="text-green-500 text-5xl mb-4">
                         <!-- Icon can be added here (FontAwesome or SVG) -->
-                        🖥️
+                        <i class="fa fa-server"></i> <!-- Web Services Icon -->
                     </div>
                     <h3 class="text-2xl font-bold mb-2">Web Services</h3>
                     <p class="text-gray-400 mb-4">
@@ -252,7 +257,7 @@
                 <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
                     <div class="text-green-500 text-5xl mb-4">
                         <!-- Icon can be added here (FontAwesome or SVG) -->
-                        🔍
+                        <i class="fa fa-edit"></i> <!-- API Development Icon -->
                     </div>
                     <h3 class="text-2xl font-bold mb-2">API development</h3>
                     <p class="text-gray-400 mb-4">
@@ -265,9 +270,9 @@
                 <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
                     <div class="text-green-500 text-5xl mb-4">
                         <!-- Icon can be added here (FontAwesome or SVG) -->
-                        🎬
+                        <i class="fa fa-cogs"></i> <!-- Satellite Dish Installation Icon -->
                     </div>
-                    <h3 class="text-2xl font-bold mb-2">Video Editing</h3>
+                    <h3 class="text-2xl font-bold mb-2">Satellite Dish Installation</h3>
                     <p class="text-gray-400 mb-4">
                         Even the all-powerful Pointing has no control about the blind texts...
                     </p>
@@ -286,15 +291,15 @@
 
                 <p>I'd love to hear about your project. Let's work together!</p>
 
-                <form action="submit_form.php" method="POST">
+                <form class="flex flex-col w-[60%]" action="submit_form.php" method="POST">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input class="text-black" type="text" id="name" name="name" required>
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input class="text-black" type="email" id="email" name="email" required>
 
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" class="mb-[1rem] mt-[1rem]" required></textarea>
+                    <textarea  id="message" name="message" rows="5" class=" text-black [1rem] mt-[1rem]" required></textarea>
 
                     <button type="submit" class="font-normal hover:font-bold bg-[violet] mb-[2rem]">Send
                         Message</button>
@@ -309,7 +314,7 @@
                     your
                     project anytime!</p>
 
-                <ul>
+                <ul class="h-2">
                     <li>Email: <a href="dotseydelanyo11@gmail.com">dotseydelanyo11@gmail.com</a></li>
                     <li>Phone: <a href="tel:+233245840830">+233 245 840 830</a></li>
                     <li>LinkedIn: <a href="www.linkedin.com/in/jacob-delanyo-dotsey-09478b222" target="_blank">Delanyo
@@ -319,6 +324,7 @@
                             target="_blank">@jeksmuller1</a></li>
 
                     <li>Facebook: <a href="facebook.com/Delanyodotsey" target="_blank">Delanyo Dotsey</a></li>
+                    <li>Instagram: <a href="https://www.instagram.com/jeksmuller/" target="_blank">Delanyo Dotsey</a></li>
                 </ul>
             </div>
 
@@ -328,17 +334,17 @@
 
     <footer class="bg-gray-900 text-center py-6 text-gray-400">
         <div class="flex justify-center space-x-4 mb-4">
-            <a href="#" class="text-green-400 text-xl">
-                <i class="fab fa-facebook"></i>
+            <a href="facebook.com/Delanyodotsey" class="text-green-400 text-xl">
+                <i class="fa fa-facebook"></i>
             </a>
-            <a href="#" class="text-green-400 text-xl">
-                <i class="fab fa-twitter"></i>
+            <a href="https://x.com/Jeksmuller1/status/1761495354279682204"" class="text-green-400 text-xl">
+                <i class="fa fa-twitter"></i>
             </a>
-            <a href="#" class="text-green-400 text-xl">
-                <i class="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/jeksmuller/" class="text-green-400 text-xl">
+                <i class="fa fa-instagram"></i>
             </a>
-            <a href="#" class="text-green-400 text-xl">
-                <i class="fab fa-linkedin"></i>
+            <a href="www.linkedin.com/in/jacob-delanyo-dotsey-09478b222" " class="text-green-400 text-xl">
+                <i class="fa fa-linkedin"></i>
             </a>
 
         </div>
